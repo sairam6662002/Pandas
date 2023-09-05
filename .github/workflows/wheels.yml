@@ -63,7 +63,7 @@ jobs:
       IS_SCHEDULE_DISPATCH: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
     steps:
       - name: Checkout pandas
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
           # versioneer.py requires the latest tag to be reachable. Here we
@@ -139,7 +139,7 @@ jobs:
       IS_SCHEDULE_DISPATCH: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
     steps:
       - name: Checkout pandas
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
           # versioneer.py requires the latest tag to be reachable. Here we
